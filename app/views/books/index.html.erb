@@ -1,0 +1,16 @@
+<hl>Libros</hl>
+
+<table border="1">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% @books.each do |book| %>
+		<tr>
+			<td><%= book.author %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
